@@ -1,0 +1,11 @@
+Rédigez un contrôleur WelcomeMessageController renvoyant un message de bienvenue avec vos nom et prénom
+depuis un fichier Twig et pointant sur la route /welcome-message.
+
+Testez le rendu de cette page à travers l'utilisation du bundle WebTestCase et stockez le contenu de la réponse
+dans un fichier HTML pour constater la cohérence de votre page web.
+
+Profitez-en pour vous assurer que la route /home renvoie bien une réponse au code statut 404, puisqu'elle
+n'existe effectivement pas.
+
+Dans une troisième fonction de test, assurez-vous que le message affiché sur la page web est bien
+« Bienvenue <Votre-Prénom> <Votre-Prénom> ».
