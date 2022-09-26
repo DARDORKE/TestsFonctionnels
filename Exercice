@@ -1,3 +1,11 @@
-Créez une nouvelle classe de test WelcomeMessagePantherTest contenant une méthode testWelcomeMessage()
-chargée de tester la cohérence de la page rendue par le contrôleur WelcomeMessageController.
-Pour ce faire, créez une assertion validant le contenu textuel censé être affiché sur cette page.
+Pour parfaire notre page, il serait intéressant de permettre à l'utilisateur de saisir lui-même les nom
+et prénom qu'il souhaite voir s'afficher dans le message de bienvenue. Quand ce sera fait, il nous faudra tester
+la cohérence du formulaire, puis du message rendu.
+
+Reprenez votre WelcomeMessageController pour permettre à l'utilisateur de saisir lui-même les nom et prénom qu'il
+souhaite voir apparaître dans le message de bienvenue. Ces informations devront pouvoir être saisies à travers un
+formulaire HTML apparaissant dans cette page. À vous de créer l'entité et le type de formulaire qui s'imposent
+(probablement User.php et UserType.php).
+
+Une fois le contrôleur correctement implémenté, testez sa cohérence à l'aide de WebTestCase, puis de Panther,
+dans une classe de test dédiée à chacun des outils.
