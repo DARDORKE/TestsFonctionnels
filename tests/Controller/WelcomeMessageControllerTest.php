@@ -29,7 +29,7 @@ class WelcomeMessageControllerTest extends WebTestCase
         $client = static::createClient();
         $crawler = $client->request('GET', '/welcome-message');
 
-        $this->assertSame(1, $crawler->filter('html:contains("Bienvenue Kévy DARDOR")')->count());
+        $this->assertSelectorTextContains("div", "Bienvenue Kévy DARDOR");
     }
 
 }
