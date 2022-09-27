@@ -1,6 +1,15 @@
-Créez un nouveau service UserService dans le dossier Service, dont la seule méthode getWelcomeMessage()
-(outre le constructeur) se charge de renvoyer un message de bienvenue avec le prénom, puis le nom de l'utilisateur,
-associés à l'id passé en paramètre (exemple : « Bienvenue Chris Chevalier »).
+Votre supérieur vous a chargé d'implémenter puis de tester une fonctionnalité simple permettant de calculer le
+salaire total de ses employés, prime incluse. Soucieux de la sécurité des données de ses salariés,
+il vous demande de réaliser ces tests en vous basant sur des données factices.
 
-Créez une classe de test UserServiceTest dont la seule méthode testGetWelcomeMessage() permet de tester la cohérence
-de la méthode getWelcomeMessage() à l'aide des mocks et stubs.
+Créez une entité Employee. Un employé a un nom, un prénom, un âge, un salaire et une prime.
+
+Créez une classe de fixture EmployeeFixtures, dont la méthode load() permet d'ajouter plusieurs employés à
+votre base de données de test. Exécutez la fixture et assurez-vous que les employés ont été correctement
+ajoutés à votre base de données.
+
+Créez un service SalaryCalculator contenant une méthode calculateTotalSalary() chargée de renvoyer le
+salaire total (salaire + prime) de l'employé, associée à l'id passé en paramètre.
+
+Créez une classe de test SalaryCalculatorTest contenant une méthode testCalculateTotalSalary() permettant de
+tester la cohérence de la méthode calculateTotalSalary() à l'aide des mocks et stubs.
