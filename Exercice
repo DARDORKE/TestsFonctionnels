@@ -1,3 +1,6 @@
-Utilisez le bundle Maker pour créer une entité User identifiée par un nom et un prénom.
-Créez une classe de fixture UserFixture dont la méthode load() permet d'ajouter 3 utilisateurs à votre base de données
-Exécutez la fixture et assurez-vous que les 3 utilisateurs ont été correctement ajoutés à votre base de données de test.
+Créez un nouveau service UserService dans le dossier Service, dont la seule méthode getWelcomeMessage()
+(outre le constructeur) se charge de renvoyer un message de bienvenue avec le prénom, puis le nom de l'utilisateur,
+associés à l'id passé en paramètre (exemple : « Bienvenue Chris Chevalier »).
+
+Créez une classe de test UserServiceTest dont la seule méthode testGetWelcomeMessage() permet de tester la cohérence
+de la méthode getWelcomeMessage() à l'aide des mocks et stubs.
